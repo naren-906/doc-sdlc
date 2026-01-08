@@ -3,140 +3,91 @@
 > This template is aligned with the standard 7-Phase SDLC process.
 
     ## Project Information
-
-        **Project Name:** [Project Name]  
-        **Project Type:** [Web Application / Mobile App / Desktop Software / etc.]  
-        **Project Owner:** [Name/Department]  
-        **Project Manager:** [Name]  
-        **Version:** [X.X]  
-        **Last Updated:** [Date]
+        **Project Name:** Azhiru InfraOps 
+        **Project Type:** Infrastructure Operations Tool
+        **Project Owner:** Subbu sainath
+        **Project Manager:** Narenthiran
+        **Version:** 1.0.0-mvp
+        **Last Updated:** 2024-06-10
 
 ---
 
 ## Phase 1: Requirements Gathering & Analysis (The "Blueprints")
 
   ### 1.1 Project Overview
-    **Business Problem:**  
-    [Describe the problem this project solves]
+    **Business Problem:**
+    The Devops and the cloud infrastructure teams face challenges in managing and automating infrastructure operations efficiently and cost optmization. Manual processes lead to errors, delays, and increased operational costs.
 
     **Project Objectives:**
     - Objective = “Why are we doing this project?”
-    - [Objective 1] 
-    - [Objective 2]
+    - Cost optimization for infra management
+    - Centralize infrastructure management tasks into a single platform.
+    - Automate routine infrastructure operations to reduce manual effort.
+    - Provide real-time monitoring and alerting for infrastructure health.
 
     **Success Metrics (KPIs):**
     - Success Metric = “How do we prove it worked?”
-    - [Metric 1: Target value]
+    - Reduce manual intervention in infra operations by 60%.
+    - Achieve 30% cost savings on cloud infrastructure within 6 months.
+    - User Adoption: 85% of infra team uses the tool daily within 2 months
 
   ### 1.2 User Analysis
     **Target Audience:**
-    - [Primary User]
-    - [Secondary User]
-
-    **Use Case Diagram:**
-    *(Recommended: Visualizes actors and their interactions with the system)*
-    ```
-                 System Name
-        ┌───────────────────────────────┐
-        │                               │
-    Actor 1 ───> ( Use Case 1 )         │
-        │                               │
-        │        ( Use Case 2 ) <─── Actor 2
-        │                               │
-        └───────────────────────────────┘
-    ```
+    - **Primary User:** DevOps Engineers (Daily usage for infra management).
+    - **Secondary User:** Cloud Infrastructure Managers (Weekly usage for reporting).
 
     **User Stories (Format: As a... I want... So that...):**
     ```
     Story ID: US-001
-    Title: [Brief title]
+    Title: Infrastructure Usage Monitoring
 
-    As a [user role],
-    I want to [action/feature],
-    So that [benefit/value].
+    As a DevOps Engineer,
+    I want to monitor real-time usage of cloud resources,
+    So that I can identify underutilized resources and optimize costs.
 
     Acceptance Criteria:
-    - [ ] [Criterion 1]
-    - [ ] [Criterion 2]
+    - [ ] Dashboard displays real-time metrics for CPU, memory, and storage usage.
+    - [ ] Alerts are triggered for resources exceeding defined thresholds.
+    - [ ] Historical usage data is available for trend analysis.
+    - [ ] Exportable reports for management review.
+    - [ ] User-friendly interface with customizable views.
     ```
 
   ### 1.3 Requirements List (MoSCoW Method)
     | ID | Requirement | Priority (Must/Should/Could) |
     |----|-------------|------------------------------|
-    | REQ-001 | [e.g. User Login] | Must Have |
-    | REQ-002 | [e.g. Dark Mode] | Could Have |
+    | REQ-001 | Infrastructure Usage Monitoring | Must Have |
+    | REQ-002 | Automated Cost Optimization Recommendations | Must Have |
+    | REQ-003 | Centralized Task Management for Infra Operations | Should Have |
+    | REQ-004 | Real-time Alerting System | Must Have |
+
 
 **Phase 1 Deliverables:**
 - [ ] Software Requirements Specification (SRS)
 - [ ] Requirements Traceability Matrix
 - [ ] Risk Assessment
-- [ ] Project Scope Document
-- [ ] Stakeholder Sign-off
 
 ---
 
 ## Phase 2: System Design & Architecture (The "Architect")
 
   ### 2.1 Architecture Decision Records (ADR)
-    **Architecture Pattern:** [Monolithic / Microservices / Serverless]
+    **Architecture Pattern:** Microservices
     
     **Reasoning:**
-    [Why did we choose this pattern? e.g. "Chosen Microservices for scalability"]
-
-    **Component / Deployment Diagram:**
-    *(Recommended: Visualizes how components connect and where they run)*
-    ```
-         [Client App] ──HTTPS──> [Load Balancer]
-                                     │
-                                     ▼
-                              [Backend API]
-                                     │
-            ┌────────────────────────┼────────────────────────┐
-            ▼                        ▼                        ▼
-       [Auth Service]          [Core Service]          [ worker ]
-            │                        │                        │
-            └───────────┬────────────┘                        │
-                        ▼                                     ▼
-                    [Database]                          [ Cache / Queue ]
-    ```
-
+    Chosen Microservices for scalability, flexibility in deployment, and ease of maintenance. This allows independent scaling of components based on load and facilitates continuous integration and delivery.
+    
   ### 2.2 Database Design
     **Database Type:** [PostgreSQL / MongoDB / Firebase / etc.]
 
     **Schema / ER Diagram:**
-    ```
-    [ User ] 1 ─── * [ Post ]
-      │ id             │ id
-      │ name           │ user_id (FK)
-                       │ content
-      
-    [ Post ] * ─── * [ Tag ]
-      (Many-to-Many via PostTags)
-    ```
+    [Link to ER Diagram or text description]
 
   ### 2.3 API Design (Contract First)
     ```
       Endpoint: GET /api/v1/users
       Description: Fetch user profile
       Response: { "id": 1, "name": "John" }
-    ```
-
-    **Sequence Diagram:**
-    *(Recommended: Visualizes the request/response flow for complex APIs)*
-    ```
-    User          Frontend          API           DB
-     │               │               │             │
-     │   Action      │               │             │
-     │──────────────>│   Request     │             │
-     │               │──────────────>│             │
-     │               │               │    Query    │
-     │               │               │────────────>│
-     │               │               │    Result   │
-     │               │               │<────────────│
-     │               │   Response    │             │
-     │               │<──────────────│             │
-     │   Update UI   │               │             │
-     │<──────────────│               │             │
     ```
 
   ### 2.4 UI/UX Design
@@ -148,8 +99,6 @@
 - [ ] Database Schema
 - [ ] API Specification (Swagger/OpenAPI)
 - [ ] Security Design Document
-- [ ] Infrastructure Requirements
-- [ ] Non-functional Requirements Mapping
 
 ---
 
@@ -171,19 +120,10 @@
     | Sprint 1 | Authentication | [Name] | [Date] |
     | Sprint 2 | Dashboard | [Name] | [Date] |
 
-  ### 3.4 Code Review Checklist
-    - [ ] **Functionality:** Code does what it's supposed to do?
-    - [ ] **Complexity:** Is the code simple and readable?
-    - [ ] **Tests:** Are unit tests included and passing?
-    - [ ] **Security:** No hardcoded secrets or injection flaws?
-    - [ ] **Naming:** Variable names are clear and consistent?
-
 **Phase 3 Deliverables:**
 - [ ] Source Code (GitHub/GitLab)
 - [ ] Code Review Sign-offs
-- [ ] Unit Tests with Coverage Report
-- [ ] Build Scripts & Env Configuration
-- [ ] Code Documentation
+- [ ] Unit Tests written
 
 ---
 
@@ -204,8 +144,6 @@
 - [ ] Test Execution Report (Pass/Fail)
 - [ ] Performance Test Results (Load Testing)
 - [ ] Security Audit Report
-- [ ] Bug Tracking Log
-- [ ] Test Plan Documentation
 
 ---
 
@@ -229,16 +167,10 @@
     2. Run `rollback.sh` script
     3. Restore database backup (if needed)
 
-  ### 5.4 Pre-Deployment Checklist
-    - [ ] All tests passed?
-    - [ ] Performance benchmarks met?
-    - [ ] Database migrations tested?
-    - [ ] Rollback plan accessible?
-
 **Phase 5 Deliverables:**
 - [ ] Deployment Runbook
 - [ ] Release Notes (v1.0.0)
-- [ ] Verified Production Environment
+- [ ] Monitoring Dashboard URLs
 
 ---
 
@@ -262,13 +194,6 @@
     - **Root Cause?**
     - **Resolution?**
     - **Action Items?**
-
-**Phase 6 Deliverables:**
-- [ ] Monitoring Dashboard URLs
-- [ ] PagerDuty/On-call Schedule
-- [ ] Incident Runbooks
-- [ ] SLA/SLO Definitions
-- [ ] Backup & Recovery Procedures
 
 ---
 
