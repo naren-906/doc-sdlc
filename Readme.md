@@ -9,14 +9,15 @@
 1. [Overview](#overview)
 2. [Phase 1: Requirements Gathering & Analysis](#phase-1-requirements-gathering--analysis)
 3. [Phase 2: System Design & Architecture](#phase-2-system-design--architecture)
-4. [Phase 3: Implementation (Coding)](#phase-3-implementation-coding)
-5. [Phase 4: Testing](#phase-4-testing)
-6. [Phase 5: Deployment](#phase-5-deployment)
-7. [Phase 6: Maintenance & Operations](#phase-6-maintenance--operations)
-8. [Phase 7: Iteration & Evolution](#phase-7-iteration--evolution)
-9. [SDLC Models](#sdlc-models)
-10. [Key Takeaways](#key-takeaways)
-11. [Resources](#resources)
+4. [Technical Modeling (UML Diagrams)](#technical-modeling-uml-diagrams)
+5. [Phase 3: Implementation (Coding)](#phase-3-implementation-coding)
+6. [Phase 4: Testing](#phase-4-testing)
+7. [Phase 5: Deployment](#phase-5-deployment)
+8. [Phase 6: Maintenance & Operations](#phase-6-maintenance--operations)
+9. [Phase 7: Iteration & Evolution](#phase-7-iteration--evolution)
+10. [SDLC Models](#sdlc-models)
+11. [Key Takeaways](#key-takeaways)
+12. [Resources](#resources)
 
 ---
 
@@ -700,46 +701,29 @@ You build a little bit, show it to the user, get feedback, and build more.
 
 ## Resources (Where to learn more)
 
-### 📚 Good Books
-- **"Clean Code"** (Robert C. Martin) - How to write code that doesn't suck.
-- **"The Phoenix Project"** (Gene Kim) - A novel about DevOps. Fun to read.
+### 📚 Essential Reading
+- **"Clean Code"** (Robert C. Martin) - The handbook for writing code that is easy to understand and maintain.
+- **"The Phoenix Project"** (Gene Kim) - A novel about DevOps that teaches you how *not* to run a confusing project.
+- **"Designing Data-Intensive Applications"** (Martin Kleppmann) - Advanced guide for system architecture.
+- **"The Pragmatic Programmer"** (David Thomas & Andrew Hunt) - Mindset and tips for professional developers.
 
-### 🔗 Websites
-- **The Twelve-Factor App** (12factor.net) - Rules for modern apps.
-- **Martin Fowler's Blog** (martinfowler.com) - Deep thoughts on software.
+### 🔗 Websites & Standards
+- **[The Twelve-Factor App](https://12factor.net/)** - The gold standard for modern web app architecture.
+- **[Martin Fowler's Blog](https://martinfowler.com/)** - Deep dives into patterns like Microservices and CI/CD.
+- **[Google SRE Book](https://sre.google/sre-book/table-of-contents/)** - How Google runs massive systems.
+- **[OWASP Top 10](https://owasp.org/)** - The standard checklist for web security.
 
----
-*Last Updated: January 2026*
+### 🛠 Tools by Phase
 
----
-
-## Resources
-
-### Books
-- "Clean Code" by Robert C. Martin
-- "The Pragmatic Programmer" by David Thomas & Andrew Hunt
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "Site Reliability Engineering" by Google
-- "The Phoenix Project" by Gene Kim
-
-### Online Resources
-- [Martin Fowler's Blog](https://martinfowler.com/)
-- [Google SRE Book](https://sre.google/sre-book/table-of-contents/)
-- [The Twelve-Factor App](https://12factor.net/)
-- [OWASP Security Guidelines](https://owasp.org/)
-
-### Tools by Phase
-
-| Phase | Tools |
-|-------|-------|
-| Requirements | Jira, Confluence, Miro, Figma |
-| Design | Draw.io, Lucidchart, PlantUML |
-| Implementation | Git, VS Code, IDEs |
-| Testing | Jest, pytest, Selenium, JMeter |
-| Deployment | GitHub Actions, Jenkins, ArgoCD |
-| Maintenance | Datadog, Grafana, PagerDuty |
+| Phase | Recommended Tools |
+|-------|-------------------|
+| **requirements** | Jira, Confluence, Miro (Whiteboarding), Figma (UI) |
+| **Design** | Draw.io, Mermaid.js, PlantUML, Lucidchart |
+| **Implementation** | VS Code, Git, GitHub/GitLab, Docker |
+| **Testing** | Jest (JS), Pytest (Python), Selenium (E2E), Postman (API) |
+| **Deployment** | GitHub Actions, Jenkins, Terraform, AWS/Azure |
+| **Maintenance** | Datadog, Grafana, PagerDuty, Sentry |
 
 ---
-
 *Last Updated: January 2026*
 *Author: Software Engineering Knowledge Base*
