@@ -271,6 +271,68 @@ Think of this like a **Large House with specific rooms**. The kitchen is separat
 
 ---
 
+## Technical Modeling (UML Diagrams)
+
+**Unified Modeling Language (UML)** is a standardized visual language for modeling software systems. It helps developers, architects, and stakeholders understand system structure and behavior.
+
+### 1. Structural Diagrams
+
+**Purpose**: Shows static structure (Class, Object, Component, Deployment).
+
+#### Class Diagram Example (E-Commerce)
+Shows classes, attributes, methods, and relationships.
+
+```
+┌─────────────────────┐       ┌─────────────────────┐
+│      Customer       │ 1   * │       Order         │
+├─────────────────────┤───────├─────────────────────┤
+│ - customerId: int   │       │ - orderId: int      │
+│ + placeOrder()      │       │ + calculateTotal()  │
+└─────────────────────┘       └─────────────────────┘
+```
+
+#### Deployment Diagram Example (Web App)
+Shows physical deployment of artifacts on nodes.
+
+```
+[ Client Browser ] ──HTTPS──> [ Load Balancer ]
+                                     │
+                             ┌───────┴───────┐
+                        [ Server 1 ]   [ Server 2 ]
+                             └───────┬───────┘
+                                     ▼
+                                [ Database ]
+```
+
+### 2. Behavioral Diagrams
+
+**Purpose**: Shows dynamic behavior (Use Case, Activity, Sequence).
+
+#### Use Case Diagram Example (ATM)
+Shows interactions between actors (Users) and the system.
+
+```
+     User ───> ( Withdraw Cash )
+      │
+      └───> ( Check Balance ) 
+```
+
+#### Sequence Diagram Example (Checkout)
+Shows object interactions over time.
+
+```
+Customer      App          API          DB
+   │ Click     │            │            │
+   │ Checkout  │            │            │
+   │──────────>│  Create    │            │
+   │           │───────────>│   Save     │
+   │           │            │───────────>│
+   │           │            │  Success   │
+   │           │<───────────│<───────────│
+```
+
+---
+
 ## Phase 3: Implementation (Coding)
 
 ### 💻 What Happens

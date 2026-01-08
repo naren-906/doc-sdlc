@@ -33,6 +33,19 @@
     - [Primary User]
     - [Secondary User]
 
+    **Use Case Diagram:**
+    *(Recommended: Visualizes actors and their interactions with the system)*
+    ```
+                 System Name
+        ┌───────────────────────────────┐
+        │                               │
+    Actor 1 ───> ( Use Case 1 )         │
+        │                               │
+        │        ( Use Case 2 ) <─── Actor 2
+        │                               │
+        └───────────────────────────────┘
+    ```
+
     **User Stories (Format: As a... I want... So that...):**
     ```
     Story ID: US-001
@@ -68,17 +81,60 @@
     **Reasoning:**
     [Why did we choose this pattern? e.g. "Chosen Microservices for scalability"]
 
+    **Component / Deployment Diagram:**
+    *(Recommended: Visualizes how components connect and where they run)*
+    ```
+         [Client App] ──HTTPS──> [Load Balancer]
+                                     │
+                                     ▼
+                              [Backend API]
+                                     │
+            ┌────────────────────────┼────────────────────────┐
+            ▼                        ▼                        ▼
+       [Auth Service]          [Core Service]          [ worker ]
+            │                        │                        │
+            └───────────┬────────────┘                        │
+                        ▼                                     ▼
+                    [Database]                          [ Cache / Queue ]
+    ```
+
   ### 2.2 Database Design
     **Database Type:** [PostgreSQL / MongoDB / Firebase / etc.]
 
     **Schema / ER Diagram:**
-    [Link to ER Diagram or text description]
+    ```
+    [ User ] 1 ─── * [ Post ]
+      │ id             │ id
+      │ name           │ user_id (FK)
+                       │ content
+      
+    [ Post ] * ─── * [ Tag ]
+      (Many-to-Many via PostTags)
+    ```
 
   ### 2.3 API Design (Contract First)
     ```
       Endpoint: GET /api/v1/users
       Description: Fetch user profile
       Response: { "id": 1, "name": "John" }
+    ```
+
+    **Sequence Diagram:**
+    *(Recommended: Visualizes the request/response flow for complex APIs)*
+    ```
+    User          Frontend          API           DB
+     │               │               │             │
+     │   Action      │               │             │
+     │──────────────>│   Request     │             │
+     │               │──────────────>│             │
+     │               │               │    Query    │
+     │               │               │────────────>│
+     │               │               │    Result   │
+     │               │               │<────────────│
+     │               │   Response    │             │
+     │               │<──────────────│             │
+     │   Update UI   │               │             │
+     │<──────────────│               │             │
     ```
 
   ### 2.4 UI/UX Design
