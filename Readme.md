@@ -9,15 +9,14 @@
 1. [Overview](#overview)
 2. [Phase 1: Requirements Gathering & Analysis](#phase-1-requirements-gathering--analysis)
 3. [Phase 2: System Design & Architecture](#phase-2-system-design--architecture)
-4. [Technical Modeling (UML Diagrams)](#technical-modeling-uml-diagrams)
-5. [Phase 3: Implementation (Coding)](#phase-3-implementation-coding)
-6. [Phase 4: Testing](#phase-4-testing)
-7. [Phase 5: Deployment](#phase-5-deployment)
-8. [Phase 6: Maintenance & Operations](#phase-6-maintenance--operations)
-9. [Phase 7: Iteration & Evolution](#phase-7-iteration--evolution)
-10. [SDLC Models](#sdlc-models)
-11. [Key Takeaways](#key-takeaways)
-12. [Resources](#resources)
+4. [Phase 3: Implementation (Coding)](#phase-3-implementation-coding)
+5. [Phase 4: Testing](#phase-4-testing)
+6. [Phase 5: Deployment](#phase-5-deployment)
+7. [Phase 6: Maintenance & Operations](#phase-6-maintenance--operations)
+8. [Phase 7: Iteration & Evolution](#phase-7-iteration--evolution)
+9. [SDLC Models](#sdlc-models)
+10. [Key Takeaways](#key-takeaways)
+11. [Resources](#resources)
 
 ---
 
