@@ -47,9 +47,9 @@ To make it easier, think of building software like building a house:
 ### SDLC Visual Overview
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────┐
 │                  THE SOFTWARE LIFECYCLE LOOP                     │
-├─────────────────────────────────────────────────────────────────┤
+├──────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │      1. REQUIREMENTS  ──────────▶  2. DESIGN                     │
 │             ▲                          │                         │
@@ -62,7 +62,7 @@ To make it easier, think of building software like building a house:
 │             │                          │                         │
 │             └──────────◀  5. DEPLOYMENT                          │
 │                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -107,7 +107,8 @@ I want to transfer money using my fingerprint,
 So that I can complete transactions quickly and securely.
 
 Acceptance Criteria:
-- Given I'm on the transfer screen, when I place my finger on the sensor, then the transfer is authenticated
+- Given I'm on the transfer screen, when I place my finger on the sensor, then the 
+transfer is authenticated
 - Given the fingerprint doesn't match, when I try to transfer, then I see an error and can retry up to 3 times
 - Given I've exceeded retry attempts, when I try again, then I'm locked out for 30 minutes
 ```
