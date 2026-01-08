@@ -711,6 +711,7 @@ You build a little bit, show it to the user, get feedback, and build more.
 - **[The Twelve-Factor App](https://12factor.net/)** - The gold standard for modern web app architecture.
 - **[Martin Fowler's Blog](https://martinfowler.com/)** - Deep dives into patterns like Microservices and CI/CD.
 - **[Google SRE Book](https://sre.google/sre-book/table-of-contents/)** - How Google runs massive systems.
+- **[Building Secure and Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/toc.html)** - Best practices for security and reliability.
 - **[OWASP Top 10](https://owasp.org/)** - The standard checklist for web security.
 
 ### 🛠 Tools by Phase
