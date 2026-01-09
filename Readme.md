@@ -728,4 +728,4 @@ You build a little bit, show it to the user, get feedback, and build more.
 *Last Updated: January 2026*
 *Author: Software Engineering Knowledge Base*
 
-![Logo](https://raw.githubusercontent.com/USERNAME/REPO_NAME/branch/images/logo.png)
+![Logo](https://res.cloudinary.com/vistaprint/images/f_auto,q_auto/v1705580305/ideas-and-advice-prod/en-us/featured_14223857a51/featured_14223857a51.png?_i=AA)
