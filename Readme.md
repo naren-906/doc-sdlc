@@ -731,4 +731,4 @@ You build a little bit, show it to the user, get feedback, and build more.
 ![Logo](https://res.cloudinary.com/vistaprint/images/f_auto,q_auto/v1705580305/ideas-and-advice-prod/en-us/featured_14223857a51/featured_14223857a51.png?_i=AA)
 
 
-<a href="https://app.eraser.io/workspace/5PncJm2uIgr1s0nOJiIr?elements=p7FGcsBQEYi1CrSjnRsOqQ">View on Eraser<br /><img src="https://app.eraser.io/workspace/5PncJm2uIgr1s0nOJiIr/preview?elements=p7FGcsBQEYi1CrSjnRsOqQ&type=embed" /></a>
+[View on Eraser![](https://app.eraser.io/workspace/5PncJm2uIgr1s0nOJiIr/preview?elements=p7FGcsBQEYi1CrSjnRsOqQ&type=embed)](https://app.eraser.io/workspace/5PncJm2uIgr1s0nOJiIr?elements=p7FGcsBQEYi1CrSjnRsOqQ)
