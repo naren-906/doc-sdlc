@@ -74,6 +74,8 @@
   ### 2.1 Architecture Decision Records (ADR)
     **Architecture Pattern:** Microservices
     
+    ![Logo](https://raw.githubusercontent.com/USERNAME/REPO_NAME/branch/images/logo.png)
+
     **Reasoning:**
     Chosen Microservices for scalability, flexibility in deployment, and ease of maintenance. This allows independent scaling of components based on load and facilitates continuous integration and delivery.
     
