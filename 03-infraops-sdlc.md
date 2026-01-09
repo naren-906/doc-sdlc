@@ -73,7 +73,7 @@
 
   ### 2.1 Architecture Decision Records (ADR)
     **Architecture Pattern:** Microservices
-  ![architecture-diagram](https://drive.google.com/file/d/16EHml8buU7ql9rariw93LKF77E9qOEo_/view)
+  ![architecture-diagram](https://drive.google.com/file/d/16EHml8buU7ql9rariw93LKF77E9qOEo_/view?usp=sharing)
   
     **Reasoning:**
     Chosen Microservices for scalability, flexibility in deployment, and ease of maintenance. This allows independent scaling of components based on load and facilitates continuous integration and delivery.
